@@ -38,24 +38,6 @@
       border-left: 4px solid #3182ce;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .project h3 {
-      margin-top: 0;
-    }
-    .project-details {
-      font-size: 0.9rem;
-      color: #555;
-      margin: 0.5rem 0 1rem;
-    }
-    .project-tools {
-      font-style: italic;
-      font-size: 0.85rem;
-      color: #777;
-    }
-    .metrics {
-      margin-top: 0.8rem;
-      font-weight: bold;
-      color: #2a6ebb;
-    }
     .button {
       display: inline-block;
       margin-right: 10px;
@@ -65,36 +47,17 @@
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
-      cursor: pointer;
     }
     .button-outline {
       background-color: transparent;
       border: 2px solid #3182ce;
       color: #3182ce;
-      cursor: pointer;
     }
     .contact a {
       display: inline-block;
       margin-right: 15px;
       color: #3182ce;
       text-decoration: none;
-    }
-    .profile-photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #3182ce;
-      float: right;
-      margin-left: 20px;
-    }
-    .about-section {
-      overflow: auto;
-    }
-    .section-title {
-      border-bottom: 2px solid #3182ce;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -106,11 +69,9 @@
       <p>Designing scalable, cloud-native data solutions with Azure, Spark, and Big Data.</p>
       <a class="button button-outline" href="#projects">View Projects</a>
     </header>
-
     <!-- About Section -->
-    <section id="about" class="about-section">
-      <img src="https://via.placeholder.com/120" alt="Profile Photo" class="profile-photo" />
-      <h2 class="section-title">About Me</h2>
+    <section id="about">
+      <h2>About Me</h2>
       <p>
         I am an analytical and results-driven data engineering professional with over 9 years of
         experience across finance, retail, insurance, and banking industries. I specialize in Azure
@@ -118,12 +79,10 @@
         focus is on building scalable data pipelines, modernizing legacy systems, and integrating
         large, diverse data sources to deliver value to business stakeholders.
       </p>
-      <p><strong>Unique Value:</strong> I combine technical expertise with hands-on experience in cloud solutions to drive business insights and operational efficiency.</p>
     </section>
-
     <!-- Skills Section -->
     <section id="skills">
-      <h2 class="section-title">Technical Skills</h2>
+      <h2>Technical Skills</h2>
       <ul>
         <li>Azure Data Factory</li>
         <li>Azure Synapse Analytics</li>
@@ -138,44 +97,25 @@
         <li>Parquet, JSON, CSV</li>
       </ul>
     </section>
-
     <!-- Projects Section -->
     <section id="projects">
-      <h2 class="section-title">Projects</h2>
-
+      <h2>Projects</h2>
       <div class="project">
         <h3>Enterprise Data Lake Development & Optimization (Azure Focus)</h3>
-        <p class="project-details">
-          Designed and developed a cloud-based enterprise data lake using Azure Synapse Analytics, Azure Data Factory, and Databricks, integrating multiple data sources into a unified system. Optimized data workflows with PySpark leveraging Azure Data Lake Storage and Azure SQL Database.
-        </p>
-        <p class="metrics">
-          Improved data processing speed by 40% and reduced query response time by 35%, enabling faster business insights.
-        </p>
-        <p class="project-tools">Tools: Azure Synapse, Azure Data Factory, Azure Databricks, Azure SQL Database, ADLS, Spark SQL, PySpark</p>
+        <p>Designed and developed a cloud-based enterprise data lake using Azure Synapse Analytics, Azure Data Factory, and Databricks, integrating multiple data sources into a unified system. Optimized data processing workflows with PySpark, utilizing Azure Data Lake Storage (ADLS) and Azure SQL Database for efficient data storage and retrieval. Enabled large-scale data analysis by implementing advanced ETL pipelines and optimizing query performance using Spark SQL.</p>
+        <small>Tools: Azure Synapse, Azure Data Factory, Azure Databricks, Azure SQL Database, Azure Data Lake Storage (ADLS), Spark SQL, PySpark</small>
       </div>
-
       <div class="project">
         <h3>Big Data Processing and SQL Analytics</h3>
-        <p class="project-details">
-          Developed and optimized a big data processing pipeline using SQL Server, Apache Hive, Impala, and Spark. Implemented complex ETL processes through SQL, Shell Scripting, and PySpark to automate ingestion and transformation.
-        </p>
-        <p class="metrics">
-          Achieved near-real-time analytics with 99.9% pipeline uptime and delivered actionable insights across multiple business units.
-        </p>
-        <p class="project-tools">Tools: SQL Server, Apache Hive, Impala, Spark, PySpark, Shell Scripting</p>
+        <p>Developed and optimized a big data processing pipeline using SQL Server, Apache Hive, Impala, and Spark. Leveraged traditional RDBMS and Hadoop ecosystems to process large-scale datasets and deliver near-real-time analytics. Implemented complex ETL processes using SQL, Shell Scripting, and PySpark to automate data ingestion and transformation, delivering actionable insights to business teams.</p>
+        <small>Tools: SQL Server, Apache Hive, Impala, Spark, PySpark, Shell Scripting</small>
       </div>
-
     </section>
-
     <!-- Contact Section -->
     <section id="contact">
-      <h2 class="section-title">Thanks for visiting my profile</h2>
-      <p>Let's connect! I am open to freelance projects, consulting opportunities, or full-time roles.</p>
-      <div class="contact">
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/yourgithubprofile" target="_blank" rel="noopener">GitHub</a>
-      </div>
+      <h2>Thanks for visiting my profile</h2>
+      <p>Let us connect ! I am open to freelance projects, consulting opportunities, or full-time roles.</p>
+      
     </section>
   </div>
 </body>
